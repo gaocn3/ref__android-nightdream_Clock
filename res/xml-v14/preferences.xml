@@ -542,6 +542,14 @@
                 android:key="weatherProvider"
                 android:title="@string/weatherProvider" />
 
+            <Preference
+                android:key="weatherProviderAttribution"
+                android:title="Powered by Dark Sky">
+                <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://darksky.net/poweredby/" />
+            </Preference>
+
             <com.firebirdberlin.nightdream.ui.WeatherPreviewPreference
                 android:dependency="showWeather"
                 android:key="weatherPreview"
@@ -652,16 +660,6 @@ vi - Phong Nguyen"/>
                     android:title="Icons">
                     <intent android:action="android.intent.action.VIEW"
                         android:data="https://icons8.com"/>
-                </Preference>
-
-                <Preference
-                    android:icon="@drawable/ic_cloud"
-                    android:key="about_owm"
-                    android:summary="OpenWeatherMap"
-                    android:title="@string/weather">
-                    <intent
-                        android:action="android.intent.action.VIEW"
-                        android:data="http://openweathermap.com" />
                 </Preference>
 
                 <Preference
